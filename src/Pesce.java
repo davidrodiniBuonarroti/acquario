@@ -21,6 +21,11 @@ public class Pesce {
         return this.peso;
     }
 
+    public void setPeso(double peso){
+        this.peso = peso;
+    }
+
+
 
 
 
