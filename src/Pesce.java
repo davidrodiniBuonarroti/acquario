@@ -13,5 +13,10 @@ public class Pesce {
         this.peso = peso;
     }
 
+    public String getTipo(){
+        return this.tipo;
+    }
+
+
 
 }
