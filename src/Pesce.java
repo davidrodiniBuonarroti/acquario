@@ -25,6 +25,15 @@ public class Pesce {
         this.peso = peso;
     }
 
+    public Pesce clone(){
+        try {
+            return new Pesce(this.tipo, this.peso);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 
 
 
