@@ -90,14 +90,14 @@ public class Acquario {
     }
 
     public String toString(){
-        String rit = "{Pesci: \n";
+        String rit = "{Pesci: \n\n";
 
         for(int i = 0; i < this.pesci.length; i++){
             rit += "Pesce " + (i+1) + "\n";
             rit += this.pesci[i].toString();
         }
 
-        rit += "Volume: " + this.volume + "}";
+        rit += "\nVolume: " + this.volume + "}";
 
         return rit;
     }
