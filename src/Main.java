@@ -1,5 +1,5 @@
 public class Main {
-    public static void main (String[] args) {
+    public static void main (String[] args) throws Exception {
 
         Acquario acquario = null;
         try {
@@ -8,7 +8,11 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        acquario.addPesce("Rosso", 2)
+        acquario.addPesce("Rosso", 2);
+        acquario.addPesce("Spada", 10);
+        acquario.addPesce("Pulitore", 4);
+
+        System.out.println(acquario.toString());
 
     }
 
