@@ -82,6 +82,10 @@ public class Acquario {
     }
 
     public Acquario clone(){
-        return new
+        try {
+            return new Acquario(this.pesci, this.volume);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
