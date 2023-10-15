@@ -38,4 +38,20 @@ public class Acquario {
     public double getVolume(){
         return this.volume;
     }
+
+    public boolean addPesce(String tipo, double volume) throws Exception {
+        boolean rit = false;
+
+        int i = 0;
+        while(i < this.pesci.length && this.pesci[i] != null){
+            i++;
+        }
+
+        if(i < this.pesci.length){
+            this.pesci[i] = new Pesce(tipo, volume);
+            rit = true;
+        }
+
+        return rit;
+    }
 }
