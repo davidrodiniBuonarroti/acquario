@@ -65,4 +65,15 @@ public class Acquario {
 
         return rit;
     }
+
+    public boolean editPesce(int pos, String tipo, double peso) throws Exception {
+        boolean rit = false;
+
+        if(pos < this.pesci.length && pos >= 0 && this.pesci[pos] != null){
+            this.pesci[pos] = new Pesce(tipo, peso);
+            rit = true;
+        }
+
+        return rit;
+    }
 }
