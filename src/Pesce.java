@@ -17,6 +17,12 @@ public class Pesce {
         return this.tipo;
     }
 
+    public double getPeso(){
+        return this.peso;
+    }
+
+
+
 
 
 }
