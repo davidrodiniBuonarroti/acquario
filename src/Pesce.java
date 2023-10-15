@@ -33,10 +33,10 @@ public class Pesce {
         }
     }
 
-
-
-
-
-
+    public String toString(){
+        String rit = "{Tipo: " + this.tipo + ",\n";
+        rit += "Peso: " + this.peso + "}\n";
+        return rit;
+    }
 
 }
