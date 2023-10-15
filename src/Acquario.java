@@ -24,6 +24,10 @@ public class Acquario {
 
         this.pesci = new Pesce[pesci.length];
 
+        for(int i = 0; i < this.pesci.length; i++){
+            this.pesci[i] = pesci[i].clone();
+        }
+
         if(volume <= 0){
             throw new Exception("Valore non valido");
         }
@@ -75,5 +79,9 @@ public class Acquario {
         }
 
         return rit;
+    }
+
+    public Acquario clone(){
+        return new
     }
 }
