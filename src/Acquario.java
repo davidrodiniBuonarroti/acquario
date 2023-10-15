@@ -43,7 +43,7 @@ public class Acquario {
         return this.volume;
     }
 
-    public boolean addPesce(String tipo, double volume) throws Exception {
+    public boolean addPesce(String tipo, double peso) throws Exception {
         boolean rit = false;
 
         int i = 0;
@@ -52,7 +52,7 @@ public class Acquario {
         }
 
         if(i < this.pesci.length){
-            this.pesci[i] = new Pesce(tipo, volume);
+            this.pesci[i] = new Pesce(tipo, peso);
             rit = true;
         }
 
