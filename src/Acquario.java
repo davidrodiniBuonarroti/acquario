@@ -88,4 +88,17 @@ public class Acquario {
             throw new RuntimeException(e);
         }
     }
+
+    public String toString(){
+        String rit = "{Pesci: \n";
+
+        for(int i = 0; i < this.pesci.length; i++){
+            rit += "Pesce " + (i+1) + "\n";
+            rit += this.pesci[i].toString();
+        }
+
+        rit += "Volume: " + this.volume + "}";
+
+        return rit;
+    }
 }
