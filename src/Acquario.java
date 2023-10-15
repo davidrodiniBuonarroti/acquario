@@ -30,4 +30,8 @@ public class Acquario {
 
         this.volume = volume;
     }
+
+    public Pesce getPesce(int pos){
+        return pos < this.pesci.length && pos >= 0 && this.pesci[pos] != null?this.pesci[pos]:null;
+    }
 }
